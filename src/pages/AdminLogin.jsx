@@ -6,28 +6,30 @@ import { useNavigate } from 'react-router-dom';
 export const AdminLogin = ({ url }) => {
 
   const navigate = useNavigate();
-  const [data, setData] = useState({ 
+  const [data, setData] = useState({
     email: '',
-     password: ''
-   });
-   
- 
+    password: ''
+  });
+
+
 
   const handleChange = e => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
   const handleLogin = async () => {
-    
+
     try {
-      const res = await axios.post(url + "/api/admin/login", data);
-      if(!res){
+      const res = await axios.post(url + "/api/admin/login", data , {
+        withCredentials: true
+      });
+      if (!res) {
         console.log("no response")
       }
       if (res.data.success) {
         localStorage.setItem("adminToken", res.data.token);
         toast.success("Login successful");
-        navigate("/"); 
+        navigate("/");
       }
     } catch (err) {
       toast.error("Invalid credentials");
