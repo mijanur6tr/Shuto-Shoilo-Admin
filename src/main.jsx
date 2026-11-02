@@ -8,8 +8,9 @@ const url = import.meta.env.VITE_BACKEND_URL
 
 import { PrivateRoute } from './components/PrivateRoute.jsx'
 import { Order } from './pages/Order.jsx'
-import {List} from "./pages/List.jsx"
-import {Add} from "./pages/Add.jsx"
+import { List } from "./pages/List.jsx"
+import { Add } from "./pages/Add.jsx"
+import { Categories } from "./pages/Categories.jsx"
 import { AdminLogin } from './pages/AdminLogin.jsx'
 
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path:"/add",
         element:<Add url={url}/>
+      },
+      {
+        path:"/categories",
+        element:<Categories url={url}/>
       },
       {
         path:"/list",

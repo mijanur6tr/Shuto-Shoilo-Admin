@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <rect width="48" height="48" x="6" y="6" rx="16" fill="#01472e"/>
+  <path d="M30 16C23 16 19 22 20 30C21 38 29 44 38 41C39 33 37 25 30 16Z" fill="#ccd5ae"/>
+  <path d="M22 36C26 31 31 27 38 23" stroke="#01472e" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="34" cy="20" r="3" fill="#fefae0"/>
+  <text x="66" y="38" font-family="'Anton', 'Inter', sans-serif" font-size="24" letter-spacing="0.1em" fill="#01472e" font-weight="900">- SHUTO SHOILI</text>
+  <text x="68" y="49" font-family="'Inter', sans-serif" font-size="8" letter-spacing="0.35em" fill="#01472e" opacity="0.75" font-weight="700">ADMIN CONSOLE</text>
+</svg>
